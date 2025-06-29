@@ -1,0 +1,23 @@
+2025-06-29 11:24:54,494 - INFO - 🚀 Starting HIGGS ML Pipeline (FIXED VERSION)
+2025-06-29 11:24:54,495 - INFO - ============================================================
+2025-06-29 11:24:54,495 - INFO - 📊 Phase 1: Data Preprocessing
+2025-06-29 11:26:31,503 - INFO -    ✅ Data preprocessed: (50000, 28)
+2025-06-29 11:26:31,503 - INFO - 🎯 Phase 2: Feature Selection
+2025-06-29 11:26:36,788 - INFO -    ✅ Feature sets created: ['all_features', 'anova_f_features', 'mutual_info_features']
+2025-06-29 11:26:36,788 - INFO - 🤖 Phase 3: Model Training and Evaluation
+2025-06-29 13:00:34,185 - INFO -    ✅ Models trained: ['KNN', 'SVM', 'MLP', 'XGBoost']
+2025-06-29 13:00:34,187 - INFO - 📈 Phase 4: Generating Visualizations
+2025-06-29 13:01:42,867 - INFO -    ✅ All visualizations created
+2025-06-29 13:01:42,868 - INFO - 💾 Phase 5: Saving Results
+2025-06-29 13:01:42,887 - INFO -    ✅ All results saved
+2025-06-29 13:01:42,887 - INFO - 
+============================================================
+2025-06-29 13:01:42,887 - INFO - 🎉 PIPELINE COMPLETED SUCCESSFULLY!
+2025-06-29 13:01:42,887 - INFO - ============================================================
+2025-06-29 13:01:42,887 - INFO - 🏆 BEST MODEL: XGBoost (ROC-AUC: 0.8373)
+2025-06-29 13:01:42,887 - INFO - 
+📁 OUTPUTS LOCATION:
+2025-06-29 13:01:42,887 - INFO -    📊 Figures: outputs/figures/
+2025-06-29 13:01:42,887 - INFO -    📋 Results: outputs/results/
+2025-06-29 13:01:42,887 - INFO -    🤖 Models: outputs/models/
+2025-06-29 13:01:42,887 - INFO -    📜 Logs: logs/

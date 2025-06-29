@@ -1,0 +1,146 @@
+{
+  "KNN": {
+    "outer_scores": [
+      0.7037049156013292,
+      0.7073376377624023,
+      0.7028161142681913
+    ],
+    "best_params_per_fold": [
+      "{'n_neighbors': 11}",
+      "{'n_neighbors': 11}",
+      "{'n_neighbors': 11}"
+    ],
+    "best_features_per_fold": [
+      "anova_f_features",
+      "anova_f_features",
+      "anova_f_features"
+    ],
+    "feature_set_scores": {
+      "all_features": [
+        0.6534284294703048,
+        0.6613596175858247,
+        0.6513213965652834
+      ],
+      "anova_f_features": [
+        0.7037049156013292,
+        0.7073376377624023,
+        0.7028161142681913
+      ],
+      "mutual_info_features": [
+        0.6795716561094242,
+        0.6829245744793732,
+        0.681396047691072
+      ]
+    },
+    "mean_score": 0.7046195558773075,
+    "std_score": 0.001955925834143835
+  },
+  "SVM": {
+    "outer_scores": [
+      0.7583183930208575,
+      0.7604698992096307,
+      0.7601157527270646
+    ],
+    "best_params_per_fold": [
+      "{'C': 1, 'kernel': 'rbf'}",
+      "{'C': 10, 'kernel': 'rbf'}",
+      "{'C': 10, 'kernel': 'rbf'}"
+    ],
+    "best_features_per_fold": [
+      "anova_f_features",
+      "anova_f_features",
+      "anova_f_features"
+    ],
+    "feature_set_scores": {
+      "all_features": [
+        0.7471436753544548,
+        0.7460635348533566,
+        0.7428952683025813
+      ],
+      "anova_f_features": [
+        0.7583183930208575,
+        0.7604698992096307,
+        0.7601157527270646
+      ],
+      "mutual_info_features": [
+        0.7505041975989681,
+        0.7527856635450304,
+        0.7501460933237748
+      ]
+    },
+    "mean_score": 0.7596346816525176,
+    "std_score": 0.0009419188762509335
+  },
+  "MLP": {
+    "outer_scores": [
+      0.7786471781963666,
+      0.7807545067412829,
+      0.7739350050071274
+    ],
+    "best_params_per_fold": [
+      "{'activation': 'relu', 'hidden_layer_sizes': (100,)}",
+      "{'activation': 'relu', 'hidden_layer_sizes': (50,)}",
+      "{'activation': 'relu', 'hidden_layer_sizes': (100,)}"
+    ],
+    "best_features_per_fold": [
+      "anova_f_features",
+      "anova_f_features",
+      "mutual_info_features"
+    ],
+    "feature_set_scores": {
+      "all_features": [
+        0.7707902073660439,
+        0.7710298739751756,
+        0.768763014356464
+      ],
+      "anova_f_features": [
+        0.7786471781963666,
+        0.7807545067412829,
+        0.7729784568100656
+      ],
+      "mutual_info_features": [
+        0.7739076658331316,
+        0.7741174662733469,
+        0.7739350050071274
+      ]
+    },
+    "mean_score": 0.7777788966482589,
+    "std_score": 0.0028509455286069006
+  },
+  "XGBoost": {
+    "outer_scores": [
+      0.7913560426082966,
+      0.7935708734596734,
+      0.7928165559566094
+    ],
+    "best_params_per_fold": [
+      "{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100}",
+      "{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100}",
+      "{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100}"
+    ],
+    "best_features_per_fold": [
+      "all_features",
+      "all_features",
+      "all_features"
+    ],
+    "feature_set_scores": {
+      "all_features": [
+        0.7913560426082966,
+        0.7935708734596734,
+        0.7928165559566094
+      ],
+      "anova_f_features": [
+        0.7830763556219377,
+        0.7840511911339401,
+        0.7832480595167552
+      ],
+      "mutual_info_features": [
+        0.782807654065919,
+        0.7872465459472071,
+        0.7874374994623473
+      ]
+    },
+    "mean_score": 0.7925811573415263,
+    "std_score": 0.0009193941142730112
+  }
+}

@@ -1,0 +1,47 @@
+# HIGGS ML Pipeline Configuration
+
+data:
+  source_url: "https://archive.ics.uci.edu/ml/datasets/HIGGS"
+  sample_size: 100000
+  random_state: 42
+  test_size: 0.2
+
+preprocessing:
+  outlier_method: "iqr"
+  outlier_threshold: 1.5
+  scaling_method: "minmax"
+  scaling_range: [0, 1]
+
+feature_selection:
+  methods: ["anova_f", "mutual_info"]
+  n_features: 15
+
+cross_validation:
+  outer_folds: 5
+  inner_folds: 3
+  scoring: "roc_auc"
+  n_jobs: -1
+
+models:
+  KNN:
+    n_neighbors: [3, 4, 5, 6, 7, 8, 9, 10, 11]
+  
+  SVM:
+    C: [0.1, 1, 10]
+    kernel: ["linear", "rbf"]
+  
+  MLP:
+    hidden_layer_sizes: [[50], [100]]
+    activation: ["relu", "tanh"]
+    max_iter: 1000
+  
+  XGBoost:
+    n_estimators: [50, 100]
+    max_depth: [3, 5]
+    learning_rate: [0.1, 0.2]
+
+output:
+  save_models: true
+  save_figures: true
+  figure_format: "png"
+  figure_dpi: 300
