@@ -1,7 +1,0 @@
-2025-06-29 11:17:03,014 - INFO - 🚀 Starting HIGGS ML Pipeline
-2025-06-29 11:17:03,014 - INFO - ============================================================
-2025-06-29 11:17:03,014 - INFO - 📊 Phase 1: Data Preprocessing
-2025-06-29 11:18:30,556 - INFO -    ✅ Data preprocessed: (100000, 28)
-2025-06-29 11:18:30,557 - INFO - 🎯 Phase 2: Feature Selection
-2025-06-29 11:18:41,198 - INFO -    ✅ Feature sets created: ['all_features', 'anova_f_features', 'mutual_info_features']
-2025-06-29 11:18:41,198 - INFO - 🤖 Phase 3: Model Training and Evaluation
